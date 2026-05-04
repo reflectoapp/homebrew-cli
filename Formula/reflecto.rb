@@ -1,28 +1,28 @@
 class Reflecto < Formula
   desc "Phone notifications in your terminal — E2E encrypted, no accounts"
   homepage "https://reflecto.app"
-  version "0.1.1" # bumped by CI on every release
+  version "0.1.2" # bumped by CI on every release
   license :cannot_represent
 
   on_macos do
     on_arm do
       url "https://github.com/reflectoapp/reflecto-binaries/releases/download/cli-v#{version}/reflecto-darwin-arm64"
-      sha256 "58c8913306ca5ac009fde477b0a097eab08fbfb875b9ad258758a68e3ceaf19a"
+      sha256 "b6b43fdf212fa3e374955e9e6644cebdf210aeff46c3e5555060b64e417a955a"
     end
     on_intel do
       url "https://github.com/reflectoapp/reflecto-binaries/releases/download/cli-v#{version}/reflecto-darwin-x64"
-      sha256 "a144e816c9e39ac490d213928c99a9b9c55aab86e8105e64c0e528adebe49c09"
+      sha256 "601a4960b8f4621fce6bbb0e4dba6e076d8ad514225525626bf605f69066c240"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/reflectoapp/reflecto-binaries/releases/download/cli-v#{version}/reflecto-linux-arm64"
-      sha256 "dfc1de17c474eedb7feabc82f150af544572f5a2266b054b04a58a31d01e4d2c"
+      sha256 "c5e62b0198a79f139fef53dcfb6ccb299533d39a6e2220a6214a935015e50cdd"
     end
     on_intel do
       url "https://github.com/reflectoapp/reflecto-binaries/releases/download/cli-v#{version}/reflecto-linux-x64"
-      sha256 "0fa3232523c5d1285b243b9635c022a76c6b9c6a270379d05dddd295cc8e10e5"
+      sha256 "7bc222f25f81c135fb1792f74cb7537cfcb33af20559d8d4945ff064a5a724c4"
     end
   end
 
